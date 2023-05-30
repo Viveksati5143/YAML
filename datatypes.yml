@@ -1,0 +1,43 @@
+# String variables
+myself: Vivek Sati
+fruit: "apple"
+job: 'devOps'
+
+bio: |    # used for multiple lines
+hey I'm Vivek!
+I'm in my 6th sem.
+
+# Write a single line in multiple lines
+
+message: >
+this will all
+be in
+one single line
+
+number: 83
+marks: 89.92
+booleanValue: No    # n, N, false, False, FALSE
+# samee for true -> yes, y, Y
+
+# specify the type
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 0b11001
+octalNum: !!int 06574
+hexa: !!int 0x45
+commaValue: !!int +500_000    # 540,000
+exponential numbers: 6.023E56
+
+# Floating point numbers
+marks: !!float 56.89
+infinite: !!float .inf
+not a num: .nan
+
+# null
+surname: !!null Null    # or null NULL ~
+~: this is a null key
+
+# dates and time
+date: !!timestamp 2002-11-19
+india time: 2001-12-15T02:59:43.10 +5:30
