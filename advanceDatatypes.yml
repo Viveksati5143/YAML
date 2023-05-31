@@ -57,4 +57,33 @@ names: !!set
 
 # dictionary !!omap
 People: !!omap
- 
+ - Vivek:
+    name: Vivek Sati
+    age: 20
+    height: 678
+  - Rahul:
+     name: Rahul OP
+     age: 50
+     height: 456
+
+# reusing some properties using anchors
+likings: &likes
+  fav fruit: mango
+  dislikes: guava
+
+person1:
+  name: Vivek Sati
+  <<: *likes
+
+person2:
+  name: Rahul
+  <<: *likes
+
+person3:
+  name: Apoorv
+  <<: *likes
+  dislikes: berries   # this will look like:  
+                      # person3:
+                      #   name: Apoorv
+                      #   fav fruit: mango
+                      #   dislikes: berries
