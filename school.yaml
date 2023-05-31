@@ -1,0 +1,8 @@
+---
+School:
+- name: DPS
+  principal: Someone
+  Students:
+  - rno: 12
+    name: Kunal Kushwaha
+    marks: 67
